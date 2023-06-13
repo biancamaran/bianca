@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+}
+
+#logo {
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    width: 100%;
+}
+
+#headerLogo {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar {
+    display: flex;
+    width: 96%;
+    background-color: #000;
+    height: 40px;
+    border-radius: 6px;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#navbar li a {
+    color: #FFF;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 96%;
+}
+
+#boxs {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 120px;
+}
+
+.box {
+    text-align: center;
+    width: 33.33%;
+    height: 40vh;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.text {
+    background-color: #000;
+    border-radius: 20px;
+    color: #FFF;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#menuMobile {
+    display: none;
+}
+
+.carousel-item {
+    height: 50vh;
+}
+
+.carousel-item.active {
+    height: 40vh;
+}
+
+.carousel-item-start {
+    height: 5px;
+}
+
+.d-block {
+    width: 100%;
+    height: 100%;
+}
+
+h5 {
+    color: #FFF !important;
+    font-size: 30px !important;
+    z-index: 10 !important;
+}
+
+p {
+    color: #FFF;
+    z-index: 10 !important;
+}
+
+.carousel-control-prev {
+    height: 40vh;
+}
+
+.carousel-control-next {
+    height: 40vh;
+}
+
+.fa-ban {
+    color: #FFF;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.box p {
+    color: #FFF;
+}
+
+.box h1 {
+    font-size: 28px;
+}
+
+@media screen and (max-width:800px) {
+    #menuMobile {
+        display: block;
+        width:50px;
+        cursor: pointer;
+    }
+
+    #navbar {
+        flex-direction: column;
+    }
+
+    #logo {
+        padding-right: 40px;
+    }
+
+    #menuMobile {
+        font-size: 30px;
+        padding-left: 20px;
+    }
+
+    #menu {
+        position: absolute;
+        left: -1000px;
+        top: 60px;
+        transition: all 300ms linear;
+    }
+
+    #navbar {
+        display: flex;
+        width: 100%;
+        background-color: #000;
+        height: 160px;
+        border-radius: 6px;
+        justify-content: center;
+        gap: 5px;
+        padding-left: 0px;
+        padding-right: 0px;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        z-index: 5;
+    }
+
+    #boxs {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 40px;
+        margin-bottom: 120px;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .box {
+        text-align: center;
+        width: 100%;
+        height: 340px;
+    }
+
+    .text {
+        background-color: #000;
+        border-radius: 20px;
+        color: #FFF;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .box img {
+        width: 100%;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .carouselExampleCaptions {
+        height: 80px !important;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        left: 0;
+        top: 35vh;
+        height: 20px;
+    }
+
+    .carousel-inner {
+        height: 40vh;
+    }
+
+
+    .fa-ban {
+        color: #FFF;
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+}
